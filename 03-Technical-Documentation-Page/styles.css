@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #4d4e53;
+}
+
+#navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #000;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  max-height: 27.5rem;
+}
+
+#navbar > header {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem;
+  color: #000;
+}
+
+#navbar > ul {
+  list-style-type: none;
+  border: 1px solid #000;
+  height: 20.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#navbar > ul > li:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+#navbar > ul > li > a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+#main-doc {
+  padding: 2rem;
+  margin: 27rem 0 11rem;
+}
+
+.main-section > header {
+  font-size: 2.8rem;
+  color: #000;
+  padding: 2rem 0;
+}
+
+.main-section > p {
+  line-height: 1.5;
+  margin: 1rem 0 1.5rem;
+}
+
+.main-section > ul {
+  padding-left: 5rem;
+}
+
+.main-section > ul > li,
+.main-section > ul > li > ul > li {
+  line-height: 1.5;
+  margin: 1rem 0 1.5rem;
+}
+
+.main-section > ul > li > ul {
+  padding-left: 4rem;
+}
+
+.main-section > code {
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding: 2rem;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  white-space: pre-line;
+}
+
+@media screen and (min-width: 810px) {
+  body {
+    display: flex;
+  }
+
+  #navbar {
+    width: 30rem;
+    max-height: 100vh;
+    height: 100%;
+    border: 0;
+    border-right: 2px solid rgba(0, 22, 22, 0.4);
+  }
+
+  #navbar > header {
+    margin: 3rem 0;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  #navbar > ul {
+    height: 100%;
+    border: 0;
+  }
+
+  #navbar > ul > li:first-of-type {
+    border-top: 1px solid #000;
+  }
+
+  #main-doc {
+    margin-top: 0;
+    margin-left: 300px;
+  }
+}

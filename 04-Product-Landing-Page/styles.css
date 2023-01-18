@@ -1,0 +1,351 @@
+/** global element styling **/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+}
+
+.btn {
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: orange !important;
+}
+
+/*
+  Header Basla
+*/
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #eee;
+}
+
+#header-img {
+  width: 60%;
+  padding: 1.5rem;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#nav-bar ul li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+  Header Son
+*/
+
+/*
+  Section Hero Basla
+*/
+
+#hero {
+  padding-top: 14rem;
+  width: 100%;
+}
+
+#hero h2 {
+  text-align: center;
+}
+
+#hero form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+#hero form input#email {
+  padding: 0.5rem;
+  max-width: 27.5rem;
+  width: 60%;
+}
+
+#hero form .btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #f1c40f;
+  outline: none;
+  border: 0;
+}
+
+/*
+  Section Hero Son
+*/
+
+/*
+  Section Features Basla
+*/
+
+#Features {
+  margin-top: 1rem;
+}
+
+#Features article {
+  text-align: center;
+  margin: 5rem 0;
+  padding: 0 0.5rem;
+}
+
+#Features article .logo {
+  display: none;
+}
+
+/*
+  Section Features Son
+*/
+
+/*
+  Section How It Works Basla
+*/
+
+#How_It_Works {
+  margin-top: 5rem;
+  max-width: 56rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#How_It_Works iframe {
+  width: 100%;
+}
+
+/*
+  Section How It Works Son
+*/
+
+/*
+  Section Pricing Basla
+*/
+
+#Pricing {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#Pricing .card {
+  max-width: 30rem;
+  width: 100%;
+  border: 1px solid #000;
+  margin: 0.8rem 0;
+  text-align: center;
+  line-height: 1.8;
+}
+
+#Pricing .card-header {
+  background-color: #ddd;
+  padding: 1.2rem;
+}
+
+#Pricing .card-header h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+#Pricing .card-body {
+  padding: 1rem 0;
+}
+
+#Pricing .card-body .price {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+#Pricing .card-body ul {
+  list-style-type: none;
+}
+
+#Pricing .card-body .btn {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  background-color: #f1c40f;
+  border: 0;
+  margin-top: 4rem;
+}
+
+/*
+  Section Pricing Son
+*/
+
+/*
+  Footer Basla
+*/
+
+#footer {
+  width: 100%;
+  background-color: #ddd;
+  text-align: end;
+  padding: 1.8rem;
+  font-size: 1.44rem;
+}
+
+#footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer ul li {
+  padding: 0.5rem 1rem;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+}
+
+#footer p {
+  color: #444;
+}
+
+/*
+  Footer Son
+*/
+
+/*
+  Media Query: Min-Width 552px
+*/
+
+@media screen and (min-width: 552px) {
+  #Features article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  #Features article .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+  }
+
+  #Features article .logo i {
+    color: darkorange;
+  }
+
+  #Features article .context {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/*
+  Media Query: Min-Width 601px
+*/
+
+@media screen and (min-width: 601px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 2rem;
+  }
+
+  #header-img {
+    width: 65vw;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+
+  #header #nav-bar {
+    padding-top: 1rem;
+    width: 35vw;
+    text-align: center;
+  }
+
+  #How_It_Works {
+    padding: 0 1.6rem;
+  }
+}
+
+/*
+  Media Query: Min-Width 651px
+*/
+
+@media screen and (min-width: 651px) {
+  #header-img {
+    max-width: 30rem;
+  }
+
+  #header #nav-bar ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header #nav-bar ul li:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+/*
+  Media Query: Min-Width 801px
+*/
+
+@media screen and (min-width: 801px) {
+  #Pricing {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #Pricing .card {
+    width: 30%;
+    margin: 1rem;
+  }
+}
+
+/*
+  Media Query: Min-Width 1000px
+*/
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

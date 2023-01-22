@@ -5,7 +5,7 @@
 
 [Tribute Page](https://ahmet-tosun.github.io/freeCodeCamp/02-Tribute-Page)
 
-[Technical Documentation Page](https://ahmet-tosun.github.io/freeCodeCamp/02-Technical-Documentation-Page)
+[Technical Documentation Page](https://ahmet-tosun.github.io/freeCodeCamp/03-Technical-Documentation-Page)
 
 [Product Landing Page](https://ahmet-tosun.github.io/freeCodeCamp/04-Product-Landing-Page)
 
